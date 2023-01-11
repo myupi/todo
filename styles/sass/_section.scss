@@ -1,0 +1,118 @@
+section {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #001432,
+    #0c3a63,
+    #156596,
+    #1394cb,
+    #00c6ff
+  );
+  .container {
+    height: 100%;
+    gap: 5px;
+    h1 {
+      font-size: 30px;
+      color: white;
+    }
+    .show {
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.18);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4.7px);
+      -webkit-backdrop-filter: blur(4.7px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 1rem;
+      .top {
+        width: 100%;
+        gap: 10px;
+        input {
+          border: none;
+          padding: 10px;
+          background: rgba(0, 0, 255, 0.14);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(4.7px);
+          -webkit-backdrop-filter: blur(4.7px);
+          border: 1px solid rgba(0, 0, 255, 0.3);
+          color: white;
+          transition: 0.3s linear;
+          &::placeholder {
+            color: white;
+          }
+          &:focus {
+            outline: 3px solid rgba(0, 0, 255, 0.1);
+          }
+        }
+        button {
+          width: 50px;
+          background: rgba(0, 0, 255, 0.14);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(4.7px);
+          -webkit-backdrop-filter: blur(4.7px);
+          border: 1px solid rgba(0, 0, 255, 0.3);
+          transition: 0.3s linear;
+          color: white;
+          &:hover {
+            outline: 3px solid rgba(0, 0, 255, 0.1);
+          }
+        }
+      }
+      .bottom {
+        gap: 5px;
+        div {
+          position: relative;
+          overflow: hidden;
+          p {
+            background-color: black;
+            padding: 5px;
+            color: white;
+            background: rgba(0, 255, 100, 0.14);
+            border-radius: 5px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.7px);
+            -webkit-backdrop-filter: blur(4.7px);
+            border: 1px solid rgba(0, 255, 100, 0.3);
+          }
+          .remove {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: rgba(255, 0, 0, 0.9);
+            z-index: 999;
+            width: 40px;
+            height: 100%;
+            overflow: hidden;
+            border: 1px solid rgba(255, 0, 0, 0.9);
+            text-align: center;
+            transition: 0.1s linear;
+            transform: translateX(100%);
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+          }
+          &:hover > .remove {
+            transform: translateX(0%);
+          }
+        }
+      }
+      .clear {
+        padding: 10px;
+        background: rgba(0, 0, 255, 0.14);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.7px);
+        -webkit-backdrop-filter: blur(4.7px);
+        border: 1px solid rgba(0, 0, 255, 0.3);
+        transition: 0.3s linear;
+        color: white;
+        width: 100%;
+        &:hover {
+          outline: 3px solid rgba(0, 0, 255, 0.1);
+        }
+      }
+    }
+  }
+}
